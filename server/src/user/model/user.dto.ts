@@ -9,6 +9,5 @@ export class LoginUserDto{
 export class CreateUserDto extends LoginUserDto{
     @IsString()
     @IsNotEmpty()
-    username: string;
-    
+    username: string;    
 }

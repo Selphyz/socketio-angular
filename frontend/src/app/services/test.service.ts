@@ -11,6 +11,6 @@ export interface Test {
 export class TestService {
   constructor(private http: HttpClient) { }
   getTest(): Observable<Test>{
-    return this.http.get<Test>('api')
+    return this.http.get<Test>('api/hello')
   }
 }
