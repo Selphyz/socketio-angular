@@ -2,7 +2,7 @@ FROM node:14 AS dev
 
 WORKDIR /carlos/frontend/src/app
 
-COPY package*.json ./
+COPY package.json ./
 
 RUN npm install
 RUN npm install -g @angular/cli@12.0.0
